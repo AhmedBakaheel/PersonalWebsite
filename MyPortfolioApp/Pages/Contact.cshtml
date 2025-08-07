@@ -1,0 +1,59 @@
+﻿@page
+@model MyPortfolioApp.Pages.ContactModel
+@{
+    ViewData["Title"] = "تواصل معي";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4 text-right mb-4">تواصل معي</h1>
+    <hr />
+
+    <div class="row justify-content-end">
+        <div class="col-md-8">
+            @if (!string.IsNullOrEmpty(Model.MessageSent))
+            {
+                <div class="alert alert-success text-right" role="alert">
+                    @Model.MessageSent
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="float: left;"></button>
+                </div>
+            }
+
+            <p class="text-right">إذا كان لديك أي استفسارات، اقتراحات، أو فرص تعاون، فلا تتردد في التواصل معي عبر النموذج أدناه أو باستخدام المعلومات المباشرة.</p>
+
+            <h4 class="text-right mt-4">معلومات الاتصال المباشرة:</h4>
+            <ul class="list-unstyled text-right">
+                <li><i class="fas fa-envelope fa-fw"></i> البريد الإلكتروني: <a href="mailto:your.email@example.com" class="text-decoration-none">your.email@example.com</a></li>
+                <li><i class="fab fa-linkedin fa-fw"></i> لينكد إن: <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-decoration-none">linkedin.com/in/yourprofile</a></li>
+                <li><i class="fab fa-github fa-fw"></i> جيت هاب: <a href="https://github.com/yourusername" target="_blank" class="text-decoration-none">github.com/yourusername</a></li>
+            </ul>
+
+            <h4 class="text-right mt-5">أرسل لي رسالة:</h4>
+            <form method="post">
+                <div class="form-group text-right mb-3">
+                    <label asp-for="Input.Name"></label>
+                    <input asp-for="Input.Name" class="form-control text-right" />
+                    <span asp-validation-for="Input.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group text-right mb-3">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control text-right" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group text-right mb-3">
+                    <label asp-for="Input.Message"></label>
+                    <textarea asp-for="Input.Message" class="form-control text-right" rows="5"></textarea>
+                    <span asp-validation-for="Input.Message" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />

@@ -1,0 +1,173 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* √·Ê«‰ √”«”Ì… ··„Êﬁ⁄ */
+:root {
+    --primary-color: #1a3748; /* ﬂÕ·Ì œ«ﬂ‰ */
+    --secondary-color: #5cbce2; /* √“—ﬁ ”„«ÊÌ */
+    --text-color: #343a40; /* —„«œÌ œ«ﬂ‰ ··‰’Ê’ */
+    --light-bg-color: #f8f9fa; /* Œ·›Ì… ›« Õ… */
+    --border-color: #e0e0e0; /* ·Ê‰ «·ÕœÊœ */
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg-color); /* «” Œœ«„ «·„ €Ì— */
+    color: var(--text-color); /* «” Œœ«„ «·„ €Ì— */
+}
+
+/*  ⁄œÌ· Navbar */
+.navbar {
+    background-color: #ffffff !important; /* Œ·›Ì… »Ì÷«¡ ··‹ Navbar */
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important; /* ·Ê‰ «·⁄·«„… «· Ã«—Ì… */
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: var(--secondary-color) !important; /* ·Ê‰ ⁄‰œ «· ÕÊÌ„ */
+    }
+
+/* «·√“—«— ( ⁄œÌ· ⁄·Ï √·Ê«‰ Bootstrap «·«› —«÷Ì…) */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #112a3d; /* œ—Ã… √€„ﬁ ⁄‰œ «· ÕÊÌ„ */
+        border-color: #112a3d;
+        transform: translateY(-2px); /*  √ÀÌ— «— ›«⁄ »”Ìÿ */
+    }
+
+.btn-outline-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+    .btn-outline-secondary:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+.btn-outline-info {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+    .btn-outline-info:hover {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+/*  Õ”Ì‰«  ·’›Õ… ⁄‰Ì (About) */
+.rounded-circle {
+    border: 4px solid var(--secondary-color); /* ÕœÊœ ··’Ê—… «·‘Œ’Ì… */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*  Õ”Ì‰«  ·»ÿ«ﬁ«  «·„‘«—Ì⁄ (Project Cards) */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ÿ· √ﬂÀ— »—Ê“« */
+    }
+
+.card-img-top {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+}
+
+    .badge.bg-secondary { /* ·Ê‰ ·‘«—«  «· ﬁ‰Ì«  */
+        background-color: var(--primary-color) !important;
+        color: white !important;
+    }
+
+/* √“—«— «·—Ê«»ÿ œ«Œ· «·»ÿ«ﬁ«  */
+.card-footer .btn {
+    font-size: 0.9em;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+}
+
+.btn-dark { /* “— GitHub */
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+    .btn-dark:hover {
+        background-color: #000000;
+        border-color: #000000;
+    }
+
+/*  Õ”Ì‰«  ⁄«„… ··⁄‰«ÊÌ‰ Ê«·‰’Ê’ */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color); /* ·Ê‰ «·⁄‰«ÊÌ‰ */
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--secondary-color); /* ·Ê‰ ⁄‰œ «· ÕÊÌ„ */
+        text-decoration: underline;
+    }
+
+/*  Õ”Ì‰«  ’›Õ… «· Ê«’· */
+.form-control {
+    border-color: var(--border-color);
+}
+
+    .form-control:focus {
+        border-color: var(--secondary-color);
+        box-shadow: 0 0 0 0.25rem rgba(92, 188, 226, 0.25); /* Ÿ· · —ﬂÌ“ «·Õﬁ· */
+    }
+
+.alert-success {
+    background-color: #d4edda; /* ·Ê‰ Œ·›Ì…  ‰»ÌÂ «·‰Ã«Õ */
+    color: #155724; /* ·Ê‰ ‰’  ‰»ÌÂ «·‰Ã«Õ */
+    border-color: #c3e6cb;
+}
