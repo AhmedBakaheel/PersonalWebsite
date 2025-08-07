@@ -19,7 +19,7 @@ namespace MyPortfolioApp.Pages.Projects
                     Description = "ÊØÈíŞ æíÈ ÔÇãá áÅÏÇÑÉ ÇáãåÇã æÇáãÔÇÑíÚ¡ íÊíÍ ááãÓÊÎÏãíä ÅäÔÇÁ¡ ÊÚííä¡ ÊÊÈÚ¡ æÅßãÇá ÇáãåÇã ÈİÚÇáíÉ.",
                     ImagePath = "/images/a.jpg", 
                     Technologies = new List<string> { "ASP.NET Core MVC", "C#", "Entity Framework Core", "SQL Server", "Bootstrap", "jQuery" },
-                    GitHubLink = "https://github.com/yourusername/task-manager-repo", 
+                    GitHubLink = "https://github.com/AhmedBakaheel/ECommerce.git", 
                     LiveDemoLink = "https://yourdemolink.com/task-manager"
                 },
                 new Project
